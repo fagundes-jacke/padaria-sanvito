@@ -1,14 +1,145 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+  <title>Padaria San Vito</title>
+  <link href="/style.css" rel="stylesheet">
+  <script defer type="text/javascript" src="/main.js"></script>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+
+  <header>
+    <h1>Padaria San Vito</h1>
+    <nav>
+      <ul>
+        <li><a href="#cardapio">Cardápio</a></li>
+        <li><a href="#conteudos">Conteúdos</a></li>
+        <li><a href="#ambientacao">Ambientação</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="quem-somos">
+      <h2>Quem Somos</h2>
+      <p>Somos uma padaria italiana com alma e tradição.</p>
+      <p>Nascida no coração da Mooca, mantemos vivas as receitas de família, o aroma do pão fresco e o sabor autêntico da Itália.</p>
+      <p>Mais do que uma padaria, somos um pedacinho da história italiana no bairro raiz, acolhedora e apaixonada por fazer bem feito, todos os dias.</p>
+    </section>
+
+    <section id="cardapio">
+      <h2>Cardápio</h2>
+
+      <article>
+        <h3>Bebidas</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Descrição</th>
+              <th>Imagem</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Café</td>
+              <td>R$ 3,00</td>
+              <td>Café coado tradicional</td>
+              <td><img src="../padaria-sanvito/assets/img/cafe.jpg" alt="Café coado" width="100"></td>
+            </tr>
+            <tr>
+              <td>Expresso</td>
+              <td>R$ 3,50</td>
+              <td>Café expresso curto, forte e encorpado</td>
+              <td><img src="../padaria-sanvito/assets/img/expresso.jpg" alt="Café expresso" width="100"></td>
+            </tr>
+            <tr>
+              <td>Café com Leite</td>
+              <td>R$ 4,50</td>
+              <td>Mistura perfeita de café e leite quente</td>
+              <td><img src="../padaria-sanvito/assets/img/cafecomleite.jpg" alt="Café com leite" width="100"></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h3>Lanches</h3>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Preço</th>
+              <th>Descrição</th>
+              <th>Imagem</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pão na chapa</td>
+              <td>R$ 4,00</td>
+              <td>Pão francês na chapa com manteiga</td>
+              <td><img src="../padaria-sanvito/assets/img/paonachapa.jpeg" alt="Pão na chapa" width="100"></td>
+            </tr>
+            <tr>
+              <td>Pão com Ovo</td>
+              <td>R$ 6,50</td>
+              <td>Pão francês recheado com ovo frito</td>
+              <td><img src="./img/paocomovo.jpg" alt="Pão com ovo" width="100"></td>
+            </tr>
+            <tr>
+              <td>Misto Quente</td>
+              <td>R$ 5,50</td>
+              <td>Pão de forma com presunto e queijo derretido</td>
+              <td><img src="./img/mistoquente.jpg" alt="Misto quente" width="100"></td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section id="ambientacao">
+      <h1>Assista ao nosso vídeo</h1>
+      <video width="640" height="360" controls>
+        <source src="./video/video-padaria.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+    </section>
+
+    <section id="ambientacao">
+      <h2>Horários de Atendimento:</h2>
+      <ul>
+        <li>Das 14h às 00h de segunda a sexta</li>
+        <li>Das 11h as 00h Sábado, Domingos e Feriados</li>        
+      </ul>
+    </section>
+      <section id="localizacao">
+        <h2>Como Chegar</h2>
+        <p>Estamos localizados na Rua da Mooca,1000 venha nos visitar!</p>      
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.8340091941464!2d-46.59529958502213!3d-23.50462178470785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ef3ecf80ef1%3A0x95c76b93e2e06596!2sMooca%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1699987251373!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+      
+    </section>
+
+    
+  </main>
+
+  <footer id="contatos">
+    <p>© Copyright 2025 - SAN VITO - Todos os direitos reservados</p>
+  </footer>
+
 </body>
 </html>
